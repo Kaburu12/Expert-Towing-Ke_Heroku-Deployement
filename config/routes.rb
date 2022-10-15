@@ -4,17 +4,19 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  
-  resources :requests, only:[:index,:show,:create,:destroy]
-  resources :vehicles, only:[:index,:show,:update]
+  namespace :api do
+   resources :requests, only:[:index,:show,:create,:destroy]
+   resources :vehicles, only:[:index,:show,:update]
   
   # delete '/requests/:id' ,to: "requests#destroy"
 
-  post '/signup',to:"users#create"
-  post '/login', to: "sessions#create"
-  delete '/logout', to: "sessions#destroy"
-  get '/me', to: "users#show"
-  get '/users', to: "users#index"
+   post '/signup',to:"users#create"
+   post '/login', to: "sessions#create"
+   delete '/logout', to: "sessions#destroy"
+   get '/me', to: "users#show"
+   get '/users', to: "users#index"
+   
+  end
 # config/routes.rb
 get '*path', to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 
