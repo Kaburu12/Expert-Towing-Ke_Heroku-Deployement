@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+  
   resources :requests, only:[:index,:show,:create,:destroy]
   resources :vehicles, only:[:index,:show,:update]
   
@@ -14,5 +15,7 @@ Rails.application.routes.draw do
   delete '/logout', to: "sessions#destroy"
   get '/me', to: "users#show"
   get '/users', to: "users#index"
+# config/routes.rb
+get '*path', to: "fallback#index", constraints: ->(req) { !req.xhr? && req.format.html? }
 
 end

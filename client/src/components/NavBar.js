@@ -13,34 +13,30 @@ function NavBar({ user, setUser }) {
   return (
     <nav>
       <div id="nav-bar">
-      <ul>
-      <li>
-        <Link to="/">HOME</Link>
-      </li>
-      <li>
-        <Link to="#">REQUESTS</Link>
-      </li>
-      <li>
-        <Link to="#">CONTACT US</Link>
-      </li>
-      <li>
-        {user ? ( <div>
-          <button onClick={handleLogoutClick}>LOGOUT</button>
+        <ul>
           <li>
-        <Link to="/reques">REQUESTS</Link>
-      </li>
-          </div>
-          
-        ) : (
-          <div id="login-signup">
-            <Link to="/signup">SIGNUP</Link>
-            <Link to="/login">LOGIN</Link>
-          </div>
-        )}
-      </li>
-      </ul>
+            <Link to="/">HOME</Link>
+          </li>
+          <li>
+            <Link to="/reques">REQUESTS</Link>
+          </li>
+          <li>
+            <Link to="/contact">CONTACT US</Link>
+          </li>
+          <li>
+            {user ? (
+              <div>
+                <button onClick={handleLogoutClick}>LOGOUT</button>
+              </div>
+            ) : (
+              <div id="login-signup">
+                <Link to="/signup">SIGNUP</Link>
+                <Link to="/login">LOGIN</Link>
+              </div>
+            )}
+          </li>
+        </ul>
       </div>
-     
     </nav>
   );
 }

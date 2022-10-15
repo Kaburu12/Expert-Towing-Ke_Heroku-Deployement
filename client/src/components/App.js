@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import SignUp from "./SignUp";
 import Login from "./Login";
 import NavBar from "./NavBar";
@@ -22,15 +22,24 @@ function App() {
       <NavBar user={user} setUser={setUser} />
       <main>
         {user ? (
-          <Routes>
-            <Route path="/" element={ <Home user={user}/>}/> 
-          </Routes>
+          <Switch>
+            <Route path="/">
+              <Home user={user}/>
+            </Route>
+          </Switch>
         ) : (
-          <Routes>
-            <Route path="/signup" element={ <SignUp setUser={setUser} />}/>
-            <Route path="/login" element={   <Login setUser={setUser} />}/>
-            <Route path="/" element={<Home/>}/>
-          </Routes>
+          <Switch>
+            <Route path="/signup">
+              <SignUp setUser={setUser} />
+            </Route>
+            <Route path="/login">
+              <Login setUser={setUser} />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          
+          </Switch>
         )}
       </main>
     </div>

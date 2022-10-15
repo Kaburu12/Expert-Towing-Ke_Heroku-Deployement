@@ -12,7 +12,7 @@ function Home({ user }) {
   if (user) {
     return <div className="home">
        <h1 id="greeting"> <span id="profile">👤</span>  Hello, {user.username} ! <span>Your User_Code Is :</span> {user.id}</h1>
-       <VehiclePage/>
+       <VehiclePage user={user}/>
        </div>
      
   } else {
