@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+
+body {
+  margin: auto;
+  max-width: 100%;
+  font-family: 'Nunito', sans-serif;
+}
+
+nav {
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  background-color: #1A9AF1;
+  
+}
+
+  nav ul {
+    display: flex;
+  list-style: none;
+  font-size: 16px;
+  margin-top: auto;
+  justify-content: center;
+
+  }
+
+  nav ul li{
+    margin-left: 5%;
+margin-right: 5%;
+margin-top: 20px;
+margin-bottom: 5px;
+  }
+  
+  
+  nav ul li a {
+  
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  padding-bottom: 1.0 rem;
+  text-decoration: none;
+  }
+  
+  nav ul li a:hover {
+  color: #ffffff;
+  background-color: blue;
+  padding: 10px;
+   margin-left: 5px;
+   margin-left: 5px;
+  }
+
+  #nav-bar ul li button{
+    background-color: #F4B350;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #000000;
+    border-style: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #login-signup a{
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+.header{
+  background-image: url(./images/header1.jpg);
+  background-size: cover;
+ background-position: center;
+ height: 80vh;
+ margin: 0; 
+ max-width: 100%;
+ padding-top: 20px;
+ padding-left: 250px;
+ padding-right: 250px;
+}
+
+.header h1{
+  color:#EC4067;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 0px 30px 0px 30px;
+
+}
+
+.top-head div h3{
+  color:#ffffff;
+  background-color: #000000;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.top-head button{
+  background-color: #1A9AF1;
+  color: #ffffff;
+  padding:15px;
+  border-style: none;
+  font-size:20px ;
+  margin-top: 20px;
+  margin-left: 165px;
+  cursor: pointer;
+}
+
+.header h1 button{
+  color: white;
+  background-color: #1A9AF1;
+  margin-left:20px ;
+  padding-top: 15px;
+  padding-bottom:15px;
+  padding-left:20px;
+padding-right: 20px;
+border-style: none;
+font-size: 20px;
+cursor: pointer;
+}
+
+main {
+  margin: 1rem;
+}
+
+form {
+  background-color: #fff8e7;
+  border: 5px solid #1A9AF1;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto;
+  padding: 0 1rem 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+form button{
+  margin-top: 10px;
+  background-color: blue;
+  color: #ffffff;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+form label{
+  font-weight: 600;
+}
+
+form input {
+  margin: 0.25rem 0;
+}
+
+form button[type="submit"] {
+  width: 40%;
+}
+
+.main-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-top{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-style: outset;
+  width: fit-content;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top:20px ;
+  text-align:center ;
+}
+
+.main-top h4{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-top h2{
+font-weight:bolder;
+}
+
+footer{
+  background-color:#F4B350 ;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+}
+
+.signup-page{
+  background-image: url(./images/header4.jpg);
+  background-size: cover;
+ background-position: center;
+ height: 80vh;
+ margin: 0; 
+ max-width: 100%;
+ padding-top: 20px;
+ padding-left: 250px;
+ padding-right: 250px;
+}
+
+.login{
+  background-image: url(./images/header5.jpg);
+  background-size: cover;
+ background-position: center;
+ height: 80vh;
+ margin: 0; 
+ max-width: 100%;
+ padding-top: 20px;
+ padding-left: 250px;
+ padding-right: 250px;
+}
+
+.cards-container{
+  display: flex;
+  /* flex-wrap: wrap; */
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.vehicle-resquest{
+  display: flex;
+}
+
+.card{
+  background-color: #1A9AF1;
+  margin: 5px;
+  list-style: none;
+  width: 30%;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0.5rem;
+}
+
+.card img{
+  width: 100%;
+  height: 70%;
+}
+
+#request-form{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-right: 50px;
+}
+
+#request-form input{
+  padding: 10px;
+}
+
+#request-form input[type="text"]{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.search-bar{
+  border-style: double;
+  border-style: outset;
+  padding-top:20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  background-color: #F4B350;
+  margin-top: 10px;
+  border-radius: 20px 0px 20px 0px;
+  padding-right: 20px;
+  margin-right: 450px;
+}
+
+.search-bar label{
+  font-size: 25px;
+  font-weight: 900;
+  margin-right:10px ;
+}
+
+.search-container{
+  margin-right:100px ;
+  margin-left: 20px;
+  
+}
+
+.search-bar input[type="text"]{
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 16px;
+  border-color: #1A9AF1;
+  border-width: 3px;
+}
+
+.request-form h2{
+  margin-left: 75px;
+}
+
+span{
+  color:#EC4067
+}
+
+form button{
+  cursor:pointer
+}
+
+.home h1{
+  margin-left: 30px;
+}
+
+.card-container{
+  background-color:#fff8e7;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.request-card{
+  margin: 5px;
+  padding: 10px;
+  border-style: double;
+  border-width: 5px;
+}
+
+.request-card button{
+  cursor: pointer;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: #EC4067;
+}
+
+.requestheader-cont{
+  background: blue;
+  text-align: center;
+  margin-left: 400px;
+  margin-right: 400px;
+  margin-top: 20px;
+}
+
+.request-header{
+  font-size: 25px;
+  font-weight: 900;
+  padding: 5px;
+  color: #ffffff;
+}
+
+.icons{
+  font-size: 30px;
+}
+
+.search-requestform{
+  display: flex;
+ 
+}
+
+#vehicle-list h2{
+text-align: center;
+font-size: 25px;
+font-weight: 600;
+margin-top: 30px;
+background-color: #1A9AF1;
+padding-top: 10px;
+padding-bottom: 10px;
+color: #ffffff;
+}
+
+#veh-list{
+  color: #000000;
+}
+
+#profile{
+  font-size: 30px;
+  background-color: #fff4e9;
+  padding: 10px;
+  border-radius: 70%;
+}
+
+button img{
+  width:30px ;
+}
